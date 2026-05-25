@@ -166,6 +166,7 @@ RUN printf '%s\n' \
     'export PATH=/isaaclab:/isaac-sim:$PATH' \
     > /etc/profile.d/isaac_paths.sh && \
     chmod +x /etc/profile.d/isaac_paths.sh && \
+    cat /etc/profile.d/isaac_paths.sh >> /root/.bashrc && \
     echo "alias python='/isaac-sim/python.sh'" >> /root/.bashrc && \
     echo "alias isaac-python='/isaac-sim/python.sh'" >> /root/.bashrc && \
     echo "alias isaaclab='/isaaclab/isaaclab.sh'" >> /root/.bashrc && \
